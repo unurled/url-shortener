@@ -1,0 +1,28 @@
+body {
+    
+    padding: 25px;
+    background-color: #00171F;
+    color: #AEB8FE;
+    font-family: "Roboto", sans-serif;
+    font-size: 2em;
+}
+input {
+    width: 100%;
+    padding: 0.5rem 0.75rem;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+button {
+    background-color: #758BFD;
+    border: none;
+    color: white;
+    padding: 0.5rem 2rem;
+    text-decoration: none;
+    margin: 1rem 0.5rem;
+    cursor: pointer;
+    border-radius: 1rem;
+}
+button:hover, button:focus {
+    color: #00171F;
+    background-color: #F45B69;
+}

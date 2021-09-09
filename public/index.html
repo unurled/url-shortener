@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="public/main.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <title>Form to API</title>
+</head>
+<body>
+    <div class="form">
+        <form action="" id="form">
+            <h2>URL Shortener</h2>
+            <div class="form-longurl">
+                <label for="longUrl">Long Url</label>
+                <input type="text" id="longUrl" placeholder="www.example.com/very-long-url/and/totally/hard-to-remember" name="longUrl">
+            </div>
+            <div class="form-button">
+                <button type="submit" class="btn-submit" id="btnSubmit">
+                Submit
+                </button>
+            </div>
+        </form>
+    </div>
+    <div id="response">
+        <br/>
+        <p id="longUrl"></p>
+        <a id="shortUrl" href=""></a>
+    </div>
+    <script type="module" src="public/js/app.js"></script>
+</body>
+</html>
