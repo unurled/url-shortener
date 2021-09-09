@@ -26,3 +26,12 @@ button:hover, button:focus {
     color: #00171F;
     background-color: #F45B69;
 }
+input, select, textarea{
+    color: #AEB8FE;
+    background-color: #00171F;
+}
+
+textarea:focus, input:focus {
+    color: #AEB8FE;
+    background-color: #00171F;
+}
