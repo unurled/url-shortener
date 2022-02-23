@@ -1,3 +1,4 @@
+require('dotenv').config()
 const express = require("express")
 const path = require('path');
 const app = express()
@@ -28,5 +29,5 @@ app.get('/public/main.css', function(req, res) {
 })
 
 //Listen for incoming requests
-const PORT = process.env.PORT || 8080
+const PORT = process.env.PORT
 app.listen(PORT, console.log(`server started, listening PORT ${PORT}`))

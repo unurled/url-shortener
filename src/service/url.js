@@ -1,3 +1,4 @@
+require('dotenv').config()
 // packages needed in this file
 const express = require('express')
 const validUrl = require('valid-url')
@@ -13,7 +14,7 @@ const Url = require('../models/url')
 // @description     Create short URL
 
 // The API base Url endpoint
-const baseUrl = 'CHANGE_URL_HERE'
+const baseUrl = process.env.BASEURL
 
 router.post('/shorten', async (req, res) => {
     const {

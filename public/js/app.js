@@ -18,7 +18,7 @@ async function submitForm(e, form) {
     // 2.3 Build Headers
     const headers = buildHeaders();
     // 2.4 Request & Response
-    const response = await fetchService.performPostHttpRequest(`URL_CHANGE_ME/api/url/shorten`, headers, jsonFormData); // Uses JSON Placeholder
+    const response = await fetchService.performPostHttpRequest(window.location.href + `api/url/shorten`, headers, jsonFormData); // Uses JSON Placeholder
     // 2.5 Inform user of result
     if(response) {
         document.getElementById("shortUrl").innerHTML = response.shortUrl
